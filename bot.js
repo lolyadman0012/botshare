@@ -1,19 +1,57 @@
-﻿const Discord = require('discord.js');
-const A7MD = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-console.log("BOT ONLINE");
+console.log("Welcome Again !");
  
-A7MD.on("guildMemberAdd", member => {
+ client.on("guildMemberRemove", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
-سيرفرنا يرحب بك يا جميل لازم تدخل
+:kissing::heart::eyes: حيااكْ الله  فى سيرفرنا 
+╔╦╦╦═╦╗╔═╦═╦══╦═╗
+║║║║╩╣╚╣═╣║║║║║╩╣
+╚══╩═╩═╩═╩═╩╩╩╩═╝ 
 
-<https://discord.gg/FhRSeRv>
+‏نقدم لك دعوة لسموك الراقيَ .
+‏لنحظى بجمال حضورك وتواجدك
+•بتنـورونـا الجميع :wink:
+•اي مشكله توآجهك ولا يهمك. عندك الاداره تفضل ونحل مشكلتك مع آي شخص بالسيرفر.:telephone_receiver:
+•عندك فكره موضوع تفضل شآركنا فيه:jack_o_lantern::gift:
+•واخيرا حييييياكم واكيد وجودكم هو اللي بيدعمنا وراح نكون الافضل.
+شرفنا يا عسل:wink: :kissing_heart:
+https://discord.gg/FhRSeRv
+رابط السيرفر
+joined info-اسم السيرفر
+! اسم السيرفر.                              
+الدعووة خاصة لك ي قلبي ... [ ${member}  ]
+**`)
+}).catch(console.error)
 
-:heart:
+})
+ 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+:kissing::heart::eyes: حيااكْ الله  فى سيرفرنا 
+╔╦╦╦═╦╗╔═╦═╦══╦═╗
+║║║║╩╣╚╣═╣║║║║║╩╣
+╚══╩═╩═╩═╩═╩╩╩╩═╝ 
 
+‏نقدم لك دعوة لسموك الراقيَ .
+‏لنحظى بجمال حضورك وتواجدك
+•بتنـورونـا الجميع :wink:
+•اي مشكله توآجهك ولا يهمك. عندك الاداره تفضل ونحل مشكلتك مع آي شخص بالسيرفر.:telephone_receiver:
+•عندك فكره موضوع تفضل شآركنا فيه:jack_o_lantern::gift:
+•واخيرا حييييياكم واكيد وجودكم هو اللي بيدعمنا وراح نكون الافضل.
+شرفنا يا عسل:wink: :kissing_heart:
+
+https://discord.gg/FhRSeRv
+رابط السيرفر
+joined info-اسم السير
+! اسم السيرفر.                              
+الدعووة خاصة لك ي قلبي ... [ ${member}  ]
 **`) 
 }).catch(console.error)
 })
-A7MD.login("NTQ1NjcyNDEwNjMyODE0NTky.D0dNjA.RMrFc3hpZ0_tKMvFUTFTYg_Rz50");
+client.login("NTQ1NjcyNDEwNjMyODE0NTky.D0dNjA.RMrFc3hpZ0_tKMvFUTFTYg_Rz50");
